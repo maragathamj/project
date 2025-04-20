@@ -1,0 +1,210 @@
+/* contact.css */
+
+/* General Styles */
+body {
+    background-color: #e0f7fa; /* Light cyan background */
+    color: #333; /* Dark text color */
+    font-family: Arial, sans-serif; /* Font family */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+header {
+    background: #00796b; /* Teal background for header */
+    color: #ffffff; /* White text color */
+    padding: 20px 0; /* Padding for header */
+    text-align: center; /* Center align text */
+}
+
+h2 {
+    color: #00796b; /* Teal color for section headings */
+}
+
+/* Navigation Bar Styles */
+.navbar {
+    background-color: rgba(76, 175, 80, 0.9); /* Semi-transparent background for navbar */
+    padding: 15px 0; /* Padding for navbar */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for navbar */
+}
+
+.navbar ul {
+    list-style: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+    display: flex; /* Use flexbox for horizontal layout */
+    justify-content: center; /* Center the navbar items */
+}
+
+.navbar ul li {
+    margin: 0 20px; /* Space between navbar items */
+}
+
+.navbar ul li a {
+    color: #ffffff; /* White text for links */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Bold text for links */
+    padding: 10px 20px; /* Padding for links */
+    border-radius: 25px; /* Rounded corners */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition for hover effect */
+    position: relative; /* For pseudo-element positioning */
+}
+
+.navbar ul li a:hover {
+    background-color: #ffcc00; /* Change background color on hover to gold */
+    color: #4a148c; /* Change text color on hover to dark purple */
+    transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+/* Underline effect on hover */
+.navbar ul li a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background: #ffcc00; /* Gold underline */
+    left: 0;
+    bottom: -5px;
+    transform: scaleX(0); /* Initially hidden */
+    transition: transform 0.3s; /* Smooth transition for effect */
+}
+
+.navbar ul li a:hover::after {
+    transform: scaleX(1); /* Show underline on hover */
+}
+
+/* Main Content Styles */
+main {
+    padding: 20px;
+    background: #ffffff; /* White background for main content */
+    margin: 20px;
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Contact Form Styles */
+form {
+    display: flex; /* Use flexbox for form layout */
+    flex-direction: column; /* Stack form elements vertically */
+}
+
+form label {
+    margin-bottom: 5px; /* Space between label and input */
+    color: #00796b; /* Teal color for labels */
+}
+
+form input, form textarea {
+    padding: 10px; /* Padding for input fields */
+    margin-bottom: 15px; /* Space between fields */
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 5px; /* Rounded corners */
+}
+
+form button {
+    background-color: #00796b; /* Teal background for button */
+    color: white; /* White text for button */
+    border: none; /* Remove border */
+    padding: 10px; /* Padding for button */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+form button:hover {
+    background-color: #004d40; /* Darker teal on hover */
+}
+/* contact.css */
+
+/* General Styles */
+body {
+    background-color: #e8f5e9; /* Light green background */
+    color: #333; /* Dark text color */
+    font-family: 'Arial', sans-serif; /* Font family */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+header {
+    background: linear-gradient(135deg, #ff8a65, #ffcc80); /* Gradient from coral to light orange */
+    color: #ffffff; /* White text color */
+    padding: 40px 0; /* Padding for header */
+    text-align: center; /* Center align text */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+}
+
+h1 {
+    font-size: 2.5em; /* Larger font size for main heading */
+    margin: 0; /* Remove default margin */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Text shadow for depth */
+}
+
+h2 {
+    color: #ff7043; /* Warm orange color for subheadings */
+    font-size: 2em; /* Font size for subheadings */
+    margin: 10px 0; /* Margin for spacing */
+}
+
+/* Contact Form Styles */
+.contact-form {
+    background-color: #ffffff; /* White background for form */
+    margin: 20px auto; /* Center the form */
+    padding: 20px; /* Padding for form */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    max-width: 600px; /* Max width for form */
+}
+
+.contact-form label {
+    display: block; /* Block display for labels */
+    margin-bottom: 5px; /* Space below labels */
+    font-weight: bold; /* Bold text for labels */
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%; /* Full width for inputs */
+    padding: 10px; /* Padding for inputs */
+    margin-bottom: 15px; /* Space below inputs */
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 5px; /* Rounded corners */
+}
+
+.contact-form button {
+    background-color: #4caf50; /* Green background for button */
+    color: #ffffff; /* White text color */
+    border: none; /* Remove border */
+    padding: 10px 20px; /* Padding for button */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.contact-form button:hover {
+    background-color: #388e3c; /* Darker green on hover */
+}
+
+/* Footer Styles */
+footer {
+    background-color: #4caf50; /* Green background for footer */
+    color: #ffffff; /* White text color */
+    text-align: center; /* Center align text */
+    padding: 15px 0; /* Padding for footer */
+    position: relative; /* Positioning for footer */
+    bottom: 0; /* Stick to bottom */
+    width: 100%; /* Full width */
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Shadow for footer */
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2em; /* Smaller font size for mobile */
+    }
+
+    h2 {
+        font-size: 1.5em; /* Smaller font size for mobile */
+    }
+
+    .contact-form {
+        margin: 10px; /* Reduce margin for mobile */
+    }
+}
